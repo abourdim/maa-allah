@@ -1,0 +1,12 @@
+{
+  "name": "With God — مع الله",
+  "short_name": "مع الله",
+  "description": "Interactive trilingual app based on Sheikh Mohammed al-Ghazali's book on dawah",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#EFEBE9",
+  "theme_color": "#4E342E",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": []
+}
