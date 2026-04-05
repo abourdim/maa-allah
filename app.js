@@ -117,7 +117,7 @@ const T = {
 const CARDS = [
   {
     id:1, emoji:'🕌',
-    ar:{title:'الإخلاص في الدعوة',desc:'الدعوة إلى الله تبدأ بالإخلاص. من لم يكن مخلصاً لله في دعوته فهو يدعو إلى نفسه لا إلى ربه. الداعية الصادق لا يبتغي شهرة ولا مالاً.',quran:'وَمَنْ أَحْسَنُ قَوْلًا مِّمَّن دَعَا إِلَى اللَّهِ وَعَمِلَ صَالِحًا',quranRef:'فصلت ٤١: ٣٣',action:'راجع نيتك اليوم: هل تدعو لله أم لنفسك؟'},
+    ar:{title:'الإخلاص في الدعوة',desc:'دراسات الغزالي في الدعوة في كتاب "مع الله": الإخلاص أولاً، ثم العلم، ثم الصبر. يحذر من الداعية بلا علم ومن العالم بلا إخلاص. الدعوة ليست مهنة بل رسالة — ومن لم يكن مخلصاً لله فهو يدعو إلى نفسه.',quran:'وَمَنْ أَحْسَنُ قَوْلًا مِّمَّن دَعَا إِلَى اللَّهِ وَعَمِلَ صَالِحًا',quranRef:'فصلت ٤١: ٣٣',action:'راجع نيتك اليوم: هل تدعو لله أم لنفسك؟'},
     en:{title:'Sincerity in Dawah',desc:'Calling to God begins with sincerity. One who is not sincere to God in their calling is actually calling to themselves, not to their Lord. The truthful caller seeks neither fame nor wealth.',quran:'And who is better in speech than one who calls to God and does righteous deeds',quranRef:'Fussilat 41:33',action:'Check your intention today: are you calling for God or for yourself?'},
     fr:{title:'La Sincerite dans la Dawah',desc:'L\'appel a Dieu commence par la sincerite. Celui qui n\'est pas sincere envers Dieu dans son appel appelle en realite a lui-meme. Le predicateur veridique ne cherche ni la gloire ni la richesse.',quran:'Et qui profere plus belle parole que celui qui appelle a Dieu et fait le bien',quranRef:'Fussilat 41:33',action:'Verifiez votre intention aujourd\'hui : appelez-vous pour Dieu ou pour vous-meme ?'}
   },
