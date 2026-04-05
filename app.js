@@ -378,7 +378,7 @@ const CARDS = [
     ar:{title:'الدعوة والتنوع',desc:'الأمة الإسلامية متنوعة في ثقافاتها ولغاتها. الداعية الحكيم يحترم هذا التنوع ويرى فيه قوة لا ضعفاً.',quran:'وَمِنْ آيَاتِهِ خَلْقُ السَّمَاوَاتِ وَالْأَرْضِ وَاخْتِلَافُ أَلْسِنَتِكُمْ وَأَلْوَانِكُمْ',quranRef:'الروم ٣٠: ٢٢',action:'تعرف على شخص من ثقافة مختلفة اليوم وشاركه شيئاً عن الإسلام'},
     en:{title:'Dawah and Diversity',desc:'The Muslim Ummah is diverse in its cultures and languages. A wise caller respects this diversity and sees it as a strength, not a weakness.',quran:'And among His signs is the creation of the heavens and the earth and the diversity of your languages and your colors',quranRef:'Ar-Rum 30:22',action:'Meet someone from a different culture today and share something about Islam with them'},
     fr:{title:'La Dawah et la Diversite',desc:'La Oumma musulmane est diversifiee dans ses cultures et ses langues. Un predicateur sage respecte cette diversite et y voit une force, pas une faiblesse.',quran:'Et parmi Ses signes, la creation des cieux et de la terre et la diversite de vos langues et de vos couleurs',quranRef:'Ar-Rum 30:22',action:'Rencontrez quelqu\'un d\'une culture differente aujourd\'hui et partagez quelque chose sur l\'Islam'}
-  }
+  },
   {
     id:43, emoji:'📱',
     ar:{title:'الدعوة الرقمية',desc:'العالم الرقمي أصبح ميداناً رئيسياً للدعوة. مقطع فيديو قصير أو تغريدة حكيمة قد تغيّر حياة إنسان. استثمر الوسائل الحديثة.',quran:'وَمَا عَلَيْكَ أَلَّا يَزَّكَّىٰ',quranRef:'عبس ٨٠: ٧',action:'أنشئ محتوى دعوياً رقمياً قصيراً وشاركه مع من حولك'},
