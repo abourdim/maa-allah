@@ -513,9 +513,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function initSplash() {
   let count = 5;
   const el = document.getElementById('splashCount');
-  if (!el) return;
   const featuresEl = document.getElementById('splashFeatures');
-  if (!featuresEl) return;
   if (featuresEl) {
     const features = T[lang].splashFeatures;
     featuresEl.innerHTML = features.map((f, i) =>
@@ -530,7 +528,6 @@ function initSplash() {
 }
 function dismissSplash() {
   const s = document.getElementById('splash');
-  if (!s) return;
   if (s) { s.classList.add('hidden'); setTimeout(() => s.style.display = 'none', 500); }
   playSound('click');
 }
@@ -557,7 +554,6 @@ function setLang(l) {
   set('habitsReset', t.resetBtn);
   renderHome(); renderCards(); renderWisdom(); renderHabits(); renderQuiz(); renderAbout(); renderHelp(); renderDuas();
   const featuresEl = document.getElementById('splashFeatures');
-  if (!featuresEl) return;
   if (featuresEl) {
     featuresEl.innerHTML = T[l].splashFeatures.map((f, i) =>
       `<div class="splash-feature" style="animation-delay:${0.3 + i * 0.3}s">${f}</div>`
@@ -572,7 +568,6 @@ function setTheme(t) {
   localStorage.setItem('ma-theme', t);
   const idx = themes.indexOf(t);
   const el = document.getElementById('themeIcon');
-  if (!el) return;
   if (el) el.textContent = themeIcons[idx];
 }
 function cycleTheme() {
@@ -733,7 +728,6 @@ function renderHabits() {
     </div>`;
   }).join('');
   const streakEl = document.getElementById('streakBadge');
-  if (!streakEl) return;
   if (streakEl) streakEl.innerHTML = streakHTML;
   updateHabitsProgress(habitsState);
 }
@@ -761,9 +755,7 @@ function updateHabitsProgress(hs) {
   const total = HABITS.length;
   const pct = total > 0 ? (done / total * 100) : 0;
   const fill = document.getElementById('habitsFill');
-  if (!fill) return;
   const txt = document.getElementById('habitsText');
-  if (!txt) return;
   if (fill) fill.style.width = pct + '%';
   if (txt) txt.textContent = `${done}/${total}`;
 }
@@ -783,7 +775,6 @@ function getStreak() { return JSON.parse(localStorage.getItem('ma-streak') || '{
 // ═══════════════ CONFETTI ═══════════════
 function launchConfetti() {
   const canvas = document.getElementById('confettiCanvas');
-  if (!canvas) return;
   canvas.style.display = 'block';
   const ctx = canvas.getContext('2d');
   canvas.width = window.innerWidth; canvas.height = window.innerHeight;
@@ -850,7 +841,6 @@ function submitQuiz() {
     desc = lang==='ar'?'الدعوة تحتاج علماً وحكمة. ابدأ بقراءة بطاقات الدعوة.':lang==='fr'?'La dawah necessite savoir et sagesse. Commencez par les cartes.':'Dawah requires knowledge and wisdom. Start with the dawah cards.';
   }
   const result = document.getElementById('quizResult');
-  if (!result) return;
   result.classList.remove('hidden');
   result.innerHTML = `
     <div class="qr-emoji">${emoji}</div>
@@ -963,15 +953,12 @@ function initScrollReveal() {
 function initKeyboardNav() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-      const hp = document.getElementById('helpPanel');
-      if (!hp) return; if (!hp.classList.contains('hidden')) { toggleHelp(); return; }
-      const dp = document.getElementById('duaPanel');
-      if (!dp) return; if (!dp.classList.contains('hidden')) { toggleDuaPanel(); return; }
+      const hp = document.getElementById('helpPanel'); if (!hp.classList.contains('hidden')) { toggleHelp(); return; }
+      const dp = document.getElementById('duaPanel'); if (!dp.classList.contains('hidden')) { toggleDuaPanel(); return; }
       document.querySelectorAll('.principle-card.open').forEach(c => c.classList.remove('open'));
     }
     if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
       const panel = document.getElementById('panel-cards');
-      if (!panel) return;
       if (!panel || !panel.classList.contains('active')) return;
       if (document.activeElement && document.activeElement.id === 'cardsSearch') return;
       e.preventDefault();
